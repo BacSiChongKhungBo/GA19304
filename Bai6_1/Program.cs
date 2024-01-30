@@ -20,6 +20,7 @@ namespace Bai6_1
                 Console.WriteLine("4. Tìm người cao tuổi theo mã");
                 Console.WriteLine("5. sắp xếp tăng dần theo tuổi");
                 Console.WriteLine("5. sắp xếp giảm dần theo tuổi");
+                Console.WriteLine("9. Kế thừa");
                 Console.WriteLine("Mời bạn nhap lựa chọn: ");
                 chon = int.Parse(Console.ReadLine());
                 switch (chon)
@@ -38,6 +39,9 @@ namespace Bai6_1
                         break;
                     case 6:
                         _qlyNCT.SapXepDSLinqDESC();
+                        break;
+                    case 9:
+                        _qlyNCT.KeThua();
                         break;
                     default:
                         break;

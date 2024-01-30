@@ -348,6 +348,23 @@ namespace Bai6_1
         }
         #endregion thanh tùng, lê anh tú
 
-
+        //in ra thông tin người alzheimer
+        public void KeThua()
+        {
+            List<NguoiAlzheimer> lstNguoiBenh;
+            lstNguoiBenh = new List<NguoiAlzheimer>() 
+            {
+                new NguoiAlzheimer("1", "A", 70, "nặng", "thuốc ngủ"),
+                new NguoiAlzheimer("2", "B", 79, "nhẹ", "thuốc an thần"),
+                new NguoiAlzheimer("3", "C", 75, "rất nặng", "bổ phế"),
+                new NguoiAlzheimer("4", "D", 88, "nhẹ", "Panadol"),
+                new NguoiAlzheimer("5", "E", 30, "trả về", "Bổ thận tráng dương")
+            };
+            //in thông tin người bệnh
+            foreach (var benhnhan in lstNguoiBenh)
+            {
+                benhnhan.InThongTin();
+            }
+        }
     }
 }
