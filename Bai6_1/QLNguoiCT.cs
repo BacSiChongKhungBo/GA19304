@@ -181,7 +181,7 @@ namespace Bai6_1
             // và chuyển thành danh sách : ToList()
             //B3:In ra kết quả
             Console.WriteLine("kết quả");
-            foreach (var item in lst_nct)
+            foreach (var item in sorted)
             {
                 item.InThongTin();
             }
@@ -191,7 +191,7 @@ namespace Bai6_1
         public void SapXepDSLinqDESC()
         {
             List<NguoiCaoTuoi> sorted = lst_nct.OrderByDescending(nct => nct.Tuoi).ToList();
-            foreach (var item in lst_nct)
+            foreach (var item in sorted)
             {
                 item.InThongTin();
             }
@@ -346,7 +346,7 @@ namespace Bai6_1
                 nguoi.InThongTin();
             }
         }
-        #endregion
+        #endregion thanh tùng, lê anh tú
 
 
     }
